@@ -30,6 +30,20 @@ mq: &default_mq
   :name: /queue/shared
   :reliable: true
 
+:irc_input:
+  :adapter: IRCAdapter
+  :server: irc.freenode.net
+  :port: 6667
+  :channel: '#smqueue'
+  :nick: smqueue_input
+
+:irc_output:
+  :adapter: IRCAdapter
+  :server: irc.freenode.net
+  :port: 6667
+  :channel: '#smqueue'
+  :nick: smqueue_output
+
 :readline:
   :adapter: ReadlineAdapter
 
